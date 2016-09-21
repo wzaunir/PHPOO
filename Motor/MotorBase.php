@@ -1,5 +1,5 @@
 <?php
-
+/*classe abstrata*/
 abstract class MotorBase
 {
   

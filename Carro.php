@@ -1,6 +1,7 @@
 <?php
 
-/*Criando uma classe */
+/** 
+ * @param Objeto Criando uma classe */
 class Carro 
 {
   public $cor;
