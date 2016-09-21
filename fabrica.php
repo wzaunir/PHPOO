@@ -1,27 +1,21 @@
 <pre>
 <?php
-
+/*php -S 0.0.0.0.:8000 -t .*/
 ini_set('display_errors',1);
 error_reporting(E_ALL);
   
 require_once "Carro.php";
+require_once "Motor/Motor16.php";
+require_once "Motor/Motor20.php";
 
-$carro = new Carro();
-//$carro->cor = 'Azul';
-
-$carro2 = new Carro();
-
-/*cria um apelido para o objeto, isto não gera um novo objeto, toda alteração neste objeto reflete para o anterior*/
-$meuCarro = $carro2;
-
-/*para clonar um objeto use a funcao clone*/
-
-$meuCarro = clone $carro2;
+$motor16 = new Motor16();
+$motor20 = new Motor20();
+$carro = new Carro('Verde',$motor16);
 
 
+$carro->abastecer(8.14);
+var_dump( $carro );
+$carro->ligar();
 
-
-$carro = new Carro('Verde');
-$carro2 = new Carro('Preto');
-
-echo ( $carro );
+  $carro->acelerar(5);
+  var_dump( $carro );
