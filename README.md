@@ -8,5 +8,4 @@ http://br.phptherightway.com/
 
 
 GIT GUIA
-
 https://www.git-tower.com/blog/git-cheat-sheet-pt
