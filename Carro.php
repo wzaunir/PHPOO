@@ -2,6 +2,10 @@
 
 /** 
  * @param Objeto Criando uma classe */
+
+namespace Ford;
+use Ford\Motor\MotorBase as MotorFord;
+use Bosh\Motor\MotorBase as MotorBosh;
 class Carro 
 {
   public $cor;
@@ -15,7 +19,7 @@ class Carro
   
   private $motor;
   
-  public function __construct($cor = "Branco", MotorBase $motor)
+  public function __construct($cor = "Branco", MotorFord $motor)
   {
     $this->cor = $cor;
     $this->motor = $motor;
@@ -99,5 +103,10 @@ class Carro
   {
     echo "Radio ligado";
    
+  }
+  
+  public function getPotencia(){
+      
+    return $this->motor->getPotencia();
   }
 }

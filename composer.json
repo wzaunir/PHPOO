@@ -1,0 +1,7 @@
+{
+    "name": "wzaunir/phpoo",
+    "description": "aula PHP OO",
+    "require": {
+        "monolog/monolog": "^1.21"
+    }
+}
